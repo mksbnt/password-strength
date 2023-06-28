@@ -1,0 +1,14 @@
+<section>
+  <form>
+    <fieldset>
+      <legend>{{title}}</legend>
+      <input #input (input)="setPassword(input.value)" type="password"/>
+
+      <ul>
+        <li [class]="getClass(COMPLEXITY.EASY, password)">Easy</li>
+        <li [class]="getClass(COMPLEXITY.MEDIUM, password)">Medium</li>
+        <li [class]="getClass(COMPLEXITY.STRONG, password)">Strong</li>
+      </ul>
+    </fieldset>
+  </form>
+</section>

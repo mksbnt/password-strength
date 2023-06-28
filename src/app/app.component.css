@@ -1,0 +1,48 @@
+section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+fieldset {
+  border-radius: 2px;
+  border-style: solid;
+  border-color: gray;
+}
+
+ul {
+  height: 21.5px;
+  margin: 10px 0 0;
+  display: flex;
+  column-gap: 2px;
+  padding: 0;
+  list-style: none;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+li {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+.gray {
+  background-color: gray;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
