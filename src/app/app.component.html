@@ -5,9 +5,9 @@
             <input #input (input)="setPassword(input.value)" type="password"/>
 
             <ul>
-                <li [class]="getClass(COMPLEXITY.EASY, password)">{{COMPLEXITY.EASY | titlecase}}</li>
-                <li [class]="getClass(COMPLEXITY.MEDIUM, password)">{{COMPLEXITY.MEDIUM | titlecase}}</li>
-                <li [class]="getClass(COMPLEXITY.STRONG, password)">{{COMPLEXITY.STRONG | titlecase}}</li>
+                <li *ngFor="let complexity of complexities" [class]="getClass(complexity, password)">
+                    {{ complexity | titlecase }}
+                </li>
             </ul>
         </fieldset>
     </form>

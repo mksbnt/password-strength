@@ -11,7 +11,11 @@ import {getColor} from "./core/utils/color.util";
 export class AppComponent {
   title: string = 'Password';
   password: string = '';
-  COMPLEXITY = PASSWORD_COMPLEXITY;
+  complexities: PASSWORD_COMPLEXITY[] = [
+    PASSWORD_COMPLEXITY.EASY,
+    PASSWORD_COMPLEXITY.MEDIUM,
+    PASSWORD_COMPLEXITY.STRONG
+  ];
 
   setPassword(value: string): void {
     this.password = value;
